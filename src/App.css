@@ -24,7 +24,18 @@
     border-bottom: grey solid 1px;
 }
 
+.messagesList .message {
+    padding: 4px 0;
+}
+
 .newMessage {
     flex-basis: 50px;
+}
+
+.newMessage input {
+    height: 100%;
+    width: 100%;
+    outline: none;
+    border: none;
     padding: 10px;
 }
