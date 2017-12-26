@@ -1,7 +1,8 @@
 {
-  "name": "chat-app-react-redux-saga-websockets",
+  "name": "chat-playground",
   "version": "0.1.0",
   "private": true,
+  "license": "MIT",
   "dependencies": {
     "chance": "^1.0.12",
     "react": "^16.2.0",
