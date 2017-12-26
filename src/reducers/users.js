@@ -9,7 +9,7 @@ export const addUser = (name) => ({
     name,
 })
 
-export const populateUserList = (users) => ({
+export const populateUsersList = (users) => ({
     type: USERS_LIST,
     users,
 })

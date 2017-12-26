@@ -16,7 +16,10 @@ const MessagesList = ({
 );
 
 MessagesList.propTypes = {
-    messages: PropTypes.arrayOf(PropTypes.shape({}))
+    messages: PropTypes.arrayOf(PropTypes.shape({
+        author: PropTypes.string.isRequired,
+        message: PropTypes.string.isRequired,
+    }))
 }
 
 export default MessagesList

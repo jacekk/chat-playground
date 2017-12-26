@@ -5,18 +5,12 @@ import MessagesList from './containers/MessagesList';
 import NewMessage from './containers/NewMessage';
 import './App.css';
 
-class App extends Component {
-    render() {
-        return (
-            <div className="container">
-                <Sidebar/>
-                <section className="main">
-                    <MessagesList/>
-                    <NewMessage/>
-                </section>
-            </div>
-        );
-    }
-}
+const App = () => (
+    <div className="container">
+        <Sidebar/>
+        <MessagesList/>
+        <NewMessage/>
+    </div>
+);
 
 export default App;

@@ -1,11 +1,13 @@
-import { combineReducers } from 'redux'
+import { combineReducers } from 'redux';
 
-import messages from './messages'
-import users from './users'
+import messages from './messages';
+import user from './user';
+import users from './users';
 
 const chatReducers = combineReducers({
     messages,
+    user,
     users,
 });
 
-export default chatReducers
+export default chatReducers;

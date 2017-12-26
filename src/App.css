@@ -1,7 +1,8 @@
 .container {
     display: grid;
-    grid-template-columns: 1fr 4fr;
-    grid-template-areas: "sidebar main";
+    grid-template-areas: "sidebar msgList" "sidebar newMsg";
+    grid-template-columns: 200px auto;
+    grid-template-rows: auto 50px;
     width: 100vw;
     height: 100vh;
 }
@@ -9,18 +10,15 @@
 .sidebar {
     grid-area: sidebar;
     padding: 10px;
+    background: #ddd;
     border-right: grey solid 1px;
 }
 
-.main {
-    grid-area: main;
-    display: flex;
-    flex-direction: column;
-}
-
 .messagesList {
-    flex-basis: 100%;
+    grid-area: msgList;
     padding: 10px;
+    overflow: auto;
+    background: #eee;
     border-bottom: grey solid 1px;
 }
 
@@ -29,7 +27,12 @@
 }
 
 .newMessage {
-    flex-basis: 50px;
+    grid-area: newMsg;
+    height: 100%;
+}
+
+.newMessage input {
+    background: transparent;
 }
 
 .newMessage input {

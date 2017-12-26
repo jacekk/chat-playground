@@ -3,7 +3,9 @@ import { connect } from 'react-redux'
 import NewMessage from '../components/NewMessage'
 import { addMessage } from '../reducers/messages'
 
-const mapStateToProps = () => ({})
+const mapStateToProps = (state) => ({
+    currentUserId: state.user.id,
+})
 
 const mapDispatchToProps = ({
     addMessage,

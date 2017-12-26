@@ -10,6 +10,7 @@ const setup = () => {
 
     const props = {
         addMessage: jest.fn(),
+        currentUserId: 'foo',
     }
     const wrapper = mount(<NewMessage {...props} />)
 

@@ -3,6 +3,7 @@ import {connect} from 'react-redux'
 import Sidebar from '../components/Sidebar'
 
 const mapStateToProps = (state, ownProps) => ({
+    currentUserId: state.user.id,
     users: state.users,
 })
 
